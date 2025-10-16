@@ -21,8 +21,20 @@
       integrity="…"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Ionicons (optional, for icons) -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <link rel="stylesheet" href="style.css" />
+
+
+    <!-- jQuery (required for your code) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
   </head>
   <body>
     <!-- <div class="container">
@@ -616,7 +628,7 @@
       <div class="container mb-lg-5 mb-md-5">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover1">
+            <div class="card shadow group-hover1 my-3">
               <div class="card-body border-bottom border-info border-3 group-hover-target1">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon1">
                   <i class="fa-regular fa-comments fa-3x text-info"></i>
@@ -632,7 +644,7 @@
             </div>
           </div>
            <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover2">
+            <div class="card shadow group-hover2 my-3">
               <div class="card-body border-bottom border-warning border-3 group-hover-target2">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon2">
                   <i class="fa-regular fa-comments fa-3x text-warning"></i>
@@ -648,7 +660,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover3">
+            <div class="card shadow group-hover3 my-3">
               <div class="card-body border-bottom border-success border-3 group-hover-target3">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon3">
                   <i class="fa-regular fa-comments fa-3x text-success"></i>
@@ -665,7 +677,7 @@
           </div>
          
           <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover4">
+            <div class="card shadow group-hover4 my-3">
               <div class="card-body border-bottom border-danger border-3 group-hover-target4 ">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon4">
                   <i class="fa-regular fa-comments fa-3x text-danger"></i>
@@ -681,7 +693,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover">
+            <div class="card shadow group-hover my-3">
               <div class="card-body  border-color5 group-hover-target">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon5">
                   <i class="fa-regular fa-comments fa-3x icon-color5"></i>
@@ -697,7 +709,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 ">
-            <div class="card shadow group-hover6">
+            <div class="card shadow group-hover6 my-3">
               <div class="card-body  border-color6 group-hover-target6">
                 <div class=" mx-auto d-flex justify-content-center align-items-center m-5 service-icon service-icon6">
                   <i class="fa-regular fa-comments fa-3x icon-color6"></i>
@@ -716,10 +728,391 @@
       </div>
     </section>
 
+<!-- --------------price section------------ -->
+   <section class="price my-5">
+      <div class="text-center my-5">
+        <h3 class="main-heading mb-3">PRICING</h3>
+        <h1 class="sub-heading heading">
+          Check our Pricing
+        </h1>
+      </div>
+      <div class="container mb-lg-5 mb-md-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 mb-sm-3">
+            <div class=" card shadow card-price-action">
+              <div class="card-body">               
+                <h5 class="text-info fw-bold text-center">Free Plan</h5>
+                <div class="price-icon text-center py-3">
+                  <sup class="fs-3 fw-bold ">$</sup>
+                  <span class="fs-1 heading px-1">0</span>
+                  <sub class="text-secondary">/mo</sub>
+                </div>
+                <img class="card-img  p-2 " src="images/pricing-free.png" alt="" />
+                <p class="para text-center">Aida dere</p>
+                <p class="para text-center">Nec feugiat nisl</p>
+                <p class="para text-center">Nulla at volutpat dola</p>
+                <p class="para text-center text-decoration-line-through">Pharetra massa</p>
+                <p class="para text-center text-decoration-line-through">Massa ultricies mi</p>
+                <div class="text-center my-4 "> <button class="btn border border-primary rounded-pill p-2 text-primary fs-5 fw-bold price-btn">Buy Now</button></div>               
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-3 col-sm-12 mb-sm-3">
+            <div class=" card shadow card-price-action">
+              <div class="card-body">               
+                <h5 class="text-success fw-bold text-center">Starter Plan</h5>
+                <div class="price-icon text-center py-3">
+                  <sup class="fs-3 fw-bold ">$</sup>
+                  <span class="fs-1 heading px-1">19</span>
+                  <sub class="text-secondary">/mo</sub>
+                </div>
+                <img class="card-img  p-2 " src="images/pricing-starter.png" alt="" />
+                <p class="para text-center">Aida dere</p>
+                <p class="para text-center">Nec feugiat nisl</p>
+                <p class="para text-center">Nulla at volutpat dola</p>
+                <p class="para text-center">Pharetra massa</p>
+                <p class="para text-center text-decoration-line-through">Massa ultricies mi</p>
+                <div class="text-center my-4 "> <button class="btn border border-primary rounded-pill p-2 text-primary fs-5 fw-bold price-btn">Buy Now</button></div>            
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-3 col-sm-12 mb-sm-3">
+            <div class=" card shadow card-price-action">
+              <div class="card-body">               
+                <h5 class="text-warning fw-bold text-center">Business Plan</h5>
+                <div class="price-icon text-center py-3">
+                  <sup class="fs-3 fw-bold ">$</sup>
+                  <span class="fs-1 heading px-1">29</span>
+                  <sub class="text-secondary">/mo</sub>
+                </div>
+                <img class="card-img  p-2 " src="images/pricing-business.png" alt="" />
+                <p class="para text-center">Aida dere</p>
+                <p class="para text-center">Nec feugiat nisl</p>
+                <p class="para text-center">Nulla at volutpat dola</p>
+                <p class="para text-center ">Pharetra massa</p>
+                <p class="para text-center ">Massa ultricies mi</p>
+                <div class="text-center my-4 "> <button class="btn border border-primary rounded-pill p-2 text-primary fs-5 fw-bold price-btn">Buy Now</button></div>            
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-3 col-sm-12 mb-sm-3">
+            <div class=" card shadow card-price-action">
+              <div class="card-body">               
+                <h5 class="text-clr fw-bold text-center">Ultimate Plan</h5>
+                <div class="price-icon text-center py-3">
+                  <sup class="fs-3 fw-bold ">$</sup>
+                  <span class="fs-1 heading px-1">49</span>
+                  <sub class="text-secondary">/mo</sub>
+                </div>
+                <img class="card-img  p-2 " src="images/pricing-ultimate.png" alt="" />
+                <p class="para text-center">Aida dere</p>
+                <p class="para text-center">Nec feugiat nisl</p>
+                <p class="para text-center">Nulla at volutpat dola</p>
+                <p class="para text-center ">Pharetra massa</p>
+                <p class="para text-center ">Massa ultricies mi</p>
+                <div class="text-center my-4 "> <button class="btn border border-primary rounded-pill p-2 text-primary fs-5 fw-bold price-btn">Buy Now</button></div>            
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------FAQ Section------- -->
+   <section class="price my-5">
+      <div class="text-center my-5">
+        <h3 class="main-heading mb-3">F.A.Q</h3>
+        <h1 class="sub-heading heading">
+          Frequently Asked Questions
+        </h1>
+      </div>
+      <div class="container mb-lg-5 mb-md-5">
+            <ul class="faq">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a ">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                <li class="q question"><div class="d-flex justify-content-between align-items-center ">
+                  <p>Non consectetur a erat nam lectus urna duis?</p>
+                  <i class="ion-chevron-down"></i>
+                </div></li>
+                <li class="a">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</li>
+              </div>
+                
+              </div>
+              
+                
+                
+                
+                
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- --------portfolio section------- -->
+   <section class="price my-5">
+      <div class="text-center my-4">
+        <h3 class="main-heading mb-3">PORTFOLIO</h3>
+        <h1 class="sub-heading heading">
+          Check our latest work
+        </h1>
+      </div>
+
+      
+
+      <!-- <div class="container d-lg-flex d-md-flex d-sm-flex pt-md-5"> -->
+        <div class="filters ">
+      <ul class="d-flex flex-row justify-content-center align-items-center text-center ">
+        <li class="active a-li m-3 px-3" data-filter="*">All</li>
+        <li data-filter=".app" class="m-3">App</li>
+        <li data-filter=".cart" class="m-3">Cart</li>
+        <li data-filter=".web" class="m-3">Web</li>
+      </ul>
+    </div>
+    
+    <div class="filters-content">
+      <div class="row grid">
+        <div class="col-lg-4 col-md-4 col-sm-12 all web mb-4 ">
+          <div class="item ">
+            <div>
+              <img class = "item-img " src="images/portfolio-1.jpg" alt="Work 1">
+              <!-- <div class="show-cls">
+                <h5>Work 1</h5>
+                <div>
+              <a href="images/portfolio-1.jpg"></a></div>
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-solid fa-plus"></i>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 all app cart mb-4">
+          <div class="item ">
+            <img class = "item-img" src="images/portfolio-2.jpg" alt="Work 1">        
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 all web mb-4">
+          <div class="item ">
+            <img class = "item-img" src="images/portfolio-3.jpg" alt="Work 1">        
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 all app mb-4">
+          <div class="item ">
+            <img class = "item-img" src="images/portfolio-4.jpg" alt="Work 1">           
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 all web mb-4">
+          <div class="item ">
+            <img class = "item-img" src="images/portfolio-5.jpg" alt="Work 1">          
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 all app mb-4">
+          <div class="item ">
+            <img class = "item-img" src="images/portfolio-6.jpg" alt="Work 1">           
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
+    </section>
+
+
+    <!-- ------------testimonals section ------ -->
+  <section class="testimonials my-5">
+      <div class="text-center my-4">
+        <h3 class="main-heading mb-3">TESTIMONIALS</h3>
+        <h1 class="sub-heading heading">
+          What they are saying about us
+        </h1>
+      </div>
+    
+      <div class="swiper mySwiper my-5">
+      <div class="swiper-wrapper mb-5">
+
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-1.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-2.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-3.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-4.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-5.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-3.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-1.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-5.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card shado">
+          <div class="card shadow p-3" >
+            <div class="stars text-center my-3 text-warning">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-center para px-4">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+              <img src="images/testimonials-2.jpg" class="card-img-top rounded-circle p-5" alt="...">
+                    
+                    <h5 class="text-center fw-bold">Sara Wilsson</h5>
+                    <span class="text-center para">Designer</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

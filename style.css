@@ -250,10 +250,165 @@ nav{
   color: white;
 }
 
+/* ------------------pricing section------------------ */
+.text-clr{
+  color: #FF0071;
+}
+.card-price-action:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+
+/* -----------------faq section------------------ */
+
+ul, li {
+    list-style: none;
+}
+.faq li {
+    padding: 1.25em;
+}
+.faq li.q {
+    font-weight: bold;
+    font-size: 120%;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+.faq li.a {
+    display: none;
+}
+.question{
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.question:hover{
+  color: #0d6efd;
+  
+}
+.answer{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* ----------------portfolio section------------------ */
+
+
+      .item-img{
+  width: 100%;
+}
+      .item-img:hover{
+  transform: scale(1.1);
+}
+.show-cls{
+  display: none;
+}
+.show-cls:hover{
+  display: show;
+}
+ .a-li , .filters li:hover{
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-radius: 17px;
+  
+}
+      
+  /* .portfolio
+    .filters
+      text-align: center
+      margin-top: 50px
+       */
+      /* ul
+        padding: 0 */
+      
+        /* li
+          list-style: none
+          display: inline-block
+          padding: 20px 30px
+          cursor: pointer
+          position: relative */
+
+          /* &:after
+            content: ''
+            display: block
+            width: calc(0% - 60px)
+            position: absolute
+            height: 2px
+            background: #333
+            transition: width 350ms ease-out */
+
+          /* &:hover
+            &:after
+              width: calc(100% - 60px)
+              transition: width 350ms ease-out */
+
+          /* &.active
+            &:after
+              width: calc(100% - 60px) */
+            
+    /* .filters-content
+      margin-top: 50px */
+      
+      /* .show
+        opacity: 1
+        visibility: visible
+        transition: all 350ms */
+        
+      /* .hide
+        opacity: 0
+        visibility: hidden
+        transition: all 350ms */
+      
+      /* .item
+        text-align: center
+        cursor: pointer
+        margin-bottom: 30px */
+        
+        /* .p-inner
+          padding: 20px 30px
+          box-shadow: 0 0 5px rgba(0,0,0,.3)
+          
+          h5
+            font-size: 15px
+            
+          .cat
+            font-size: 13px
+         */
+        /* img
+          width: 100% */
 
 
 
 
+          /* ----------------testimonials section------------------ */
+       
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #444; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 @media (max-width: 300px) {
   .nav-list-item{
