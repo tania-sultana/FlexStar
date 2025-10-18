@@ -47,6 +47,7 @@ section{
   border-radius: 5px;
   border: 1px solid #98C1FE;
 }
+
 .para{
   font-weight: 400;
   font-size: 16px;
@@ -68,6 +69,7 @@ nav{
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
+  text-decoration: none;
 }
 .nav-item{
   padding-left: 20px;
@@ -77,13 +79,25 @@ nav{
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  
 }
+
+:root {
+  --width: 90%;
+  --color-secondary: #333;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
 /* ---------------hero section---------------- */
 .hero-left{
-    padding-top: 30%;
+    padding-top: 40%;
 }
 .hero-right{
-  padding-top: 17%;
+  padding-top: 25%;
 }
 .hero-cls{
   width: var(--width);
@@ -140,7 +154,7 @@ nav{
 .sub-heading{
   font-size: 38px;
 }
-.card-img:hover{
+.card-img-effect:hover{
   transform: scale(0.9);
   transition: 0.5s ease-in-out;
 }
@@ -261,7 +275,10 @@ nav{
 
 
 /* -----------------faq section------------------ */
-
+.faq ul{
+  padding: 0 ;
+    margin: 0;
+}
 ul, li {
     list-style: none;
 }
@@ -299,9 +316,11 @@ ul, li {
       .item-img{
   width: 100%;
 }
-      .item-img:hover{
-  transform: scale(1.1);
-}
+      /* .item-img:hover {
+        opacity: 0.5;
+  transform: scale(0.9);
+} */
+
 .show-cls{
   display: none;
 }
@@ -319,73 +338,25 @@ ul, li {
   border-radius: 17px;
   
 }
-      
-  /* .portfolio
-    .filters
-      text-align: center
-      margin-top: 50px
-       */
-      /* ul
-        padding: 0 */
-      
-        /* li
-          list-style: none
-          display: inline-block
-          padding: 20px 30px
-          cursor: pointer
-          position: relative */
 
-          /* &:after
-            content: ''
-            display: block
-            width: calc(0% - 60px)
-            position: absolute
-            height: 2px
-            background: #333
-            transition: width 350ms ease-out */
-
-          /* &:hover
-            &:after
-              width: calc(100% - 60px)
-              transition: width 350ms ease-out */
-
-          /* &.active
-            &:after
-              width: calc(100% - 60px) */
-            
-    /* .filters-content
-      margin-top: 50px */
-      
-      /* .show
-        opacity: 1
-        visibility: visible
-        transition: all 350ms */
-        
-      /* .hide
-        opacity: 0
-        visibility: hidden
-        transition: all 350ms */
-      
-      /* .item
-        text-align: center
-        cursor: pointer
-        margin-bottom: 30px */
-        
-        /* .p-inner
-          padding: 20px 30px
-          box-shadow: 0 0 5px rgba(0,0,0,.3)
-          
-          h5
-            font-size: 15px
-            
-          .cat
-            font-size: 13px
-         */
-        /* img
-          width: 100% */
-
-
-
+.link-hvr{
+  opacity: 0 ;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #012970;
+  /* color:var(--color-bg); */
+}
+. icon-clr{
+  color: #012970;
+}
+.link-show:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.link-show:hover .link-hvr{
+  opacity: 1 !important;
+}
 
           /* ----------------testimonials section------------------ */
        
@@ -397,7 +368,6 @@ ul, li {
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      /* background: #444; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -410,6 +380,60 @@ ul, li {
       object-fit: cover;
     }
 
+/* -----------------team section------------------  */
+
+.social-icon{
+  color: #012970;
+  background-color: #DADADA;
+  width: 55px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+}
+.team-body:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+.team-body:hover .social-icon{
+  opacity: 0.6;
+}
+/* ---------carousel section----------- */
+.carousel-img {
+  width: 150px !important;
+  height: auto;
+}
+/* ---------------blog------------- */
+.blog-date{
+ 
+  line-height: 24px;
+  color: #677FA9;
+}
+/* ---------newsletter------------- */
+.news-sec{
+  border: 1px solid  black;
+}
+.news-input{
+  height: 47px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+/* ---------------footer------------  */
+.footer-item{
+  background-image: url("images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-social-icon > a > i{
+  color: #788CB3;
+  /* opacity: 0.5; */
+}
+.footer-item{
+  color: #012970;
+}
+
+/* -------media section-------- */
 @media (max-width: 300px) {
   .nav-list-item{
     
