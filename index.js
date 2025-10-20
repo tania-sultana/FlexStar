@@ -81,3 +81,5 @@ var $grid = $(".grid").isotope({
         992: { slidesPerView: 5 },
       },
     });
+
+    
